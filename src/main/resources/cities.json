@@ -1,0 +1,2411 @@
+[
+    {
+      "name": "Warszawa",
+      "region": "mazowieckie",
+      "olx": {
+        "id": 17871
+      },
+      "otodom": {
+        "location": "mazowieckie/warszawa/warszawa/warszawa",
+        "region_id": "7",
+        "subregion_id": "197",
+        "city_id": 26
+      },
+      "locations": [
+        {
+          "name": "Bemowo",
+          "region": "mazowieckie",
+          "olx": {
+            "id": 367
+          },
+          "otodom": {
+            "location": "mazowieckie/warszawa/warszawa/warszawa/bemowo",
+            "region_id": "7",
+            "subregion_id": "197",
+            "city_id": "26",
+            "district_id": 36
+          },
+          "id": 0
+        },
+        {
+          "name": "Białołęka",
+          "region": "mazowieckie",
+          "olx": {
+            "id": 365
+          },
+          "otodom": {
+            "location": "mazowieckie/warszawa/warszawa/warszawa/bialoleka",
+            "region_id": "7",
+            "subregion_id": "197",
+            "city_id": "26",
+            "district_id": 37
+          },
+          "id": 1
+        },
+        {
+          "name": "Bielany",
+          "region": "mazowieckie",
+          "olx": {
+            "id": 369
+          },
+          "otodom": {
+            "location": "mazowieckie/warszawa/warszawa/warszawa/bielany",
+            "region_id": "7",
+            "subregion_id": "197",
+            "city_id": "26",
+            "district_id": 38
+          },
+          "id": 2
+        },
+        {
+          "name": "Mokotów",
+          "region": "mazowieckie",
+          "olx": {
+            "id": 353
+          },
+          "otodom": {
+            "location": "mazowieckie/warszawa/warszawa/warszawa/mokotow",
+            "region_id": "7",
+            "subregion_id": "197",
+            "city_id": "26",
+            "district_id": 39
+          },
+          "id": 3
+        },
+        {
+          "name": "Ochota",
+          "region": "mazowieckie",
+          "olx": {
+            "id": 355
+          },
+          "otodom": {
+            "location": "mazowieckie/warszawa/warszawa/warszawa/ochota",
+            "region_id": "7",
+            "subregion_id": "197",
+            "city_id": "26",
+            "district_id": 40
+          },
+          "id": 4
+        },
+        {
+          "name": "Praga-Północ",
+          "region": "mazowieckie",
+          "olx": {
+            "id": 379
+          },
+          "otodom": {
+            "location": "mazowieckie/warszawa/warszawa/warszawa/praga--polnoc",
+            "region_id": "7",
+            "subregion_id": "197",
+            "city_id": "26",
+            "district_id": 42
+          },
+          "id": 5
+        },
+        {
+          "name": "Praga-Południe",
+          "region": "mazowieckie",
+          "olx": {
+            "id": 381
+          },
+          "otodom": {
+            "location": "mazowieckie/warszawa/warszawa/warszawa/praga--poludnie",
+            "region_id": "7",
+            "subregion_id": "197",
+            "city_id": "26",
+            "district_id": 41
+          },
+          "id": 6
+        },
+        {
+          "name": "Rembertów",
+          "region": "mazowieckie",
+          "olx": {
+            "id": 361
+          },
+          "otodom": {
+            "location": "mazowieckie/warszawa/warszawa/warszawa/rembertow",
+            "region_id": "7",
+            "subregion_id": "197",
+            "city_id": "26",
+            "district_id": 43
+          },
+          "id": 7
+        },
+        {
+          "name": "Śródmieście",
+          "region": "mazowieckie",
+          "olx": {
+            "id": 351
+          },
+          "otodom": {
+            "location": "mazowieckie/warszawa/warszawa/warszawa/srodmiescie",
+            "region_id": "7",
+            "subregion_id": "197",
+            "city_id": "26",
+            "district_id": 44
+          },
+          "id": 8
+        },
+        {
+          "name": "Targówek",
+          "region": "mazowieckie",
+          "olx": {
+            "id": 377
+          },
+          "otodom": {
+            "location": "mazowieckie/warszawa/warszawa/warszawa/targowek",
+            "region_id": "7",
+            "subregion_id": "197",
+            "city_id": "26",
+            "district_id": 45
+          },
+          "id": 9
+        },
+        {
+          "name": "Ursus",
+          "region": "mazowieckie",
+          "olx": {
+            "id": 371
+          },
+          "otodom": {
+            "location": "mazowieckie/warszawa/warszawa/warszawa/ursus",
+            "region_id": "7",
+            "subregion_id": "197",
+            "city_id": "26",
+            "district_id": 46
+          },
+          "id": 10
+        },
+        {
+          "name": "Ursynów",
+          "region": "mazowieckie",
+          "olx": {
+            "id": 373
+          },
+          "otodom": {
+            "location": "mazowieckie/warszawa/warszawa/warszawa/ursynow",
+            "region_id": "7",
+            "subregion_id": "197",
+            "city_id": "26",
+            "district_id": 47
+          },
+          "id": 11
+        },
+        {
+          "name": "Wawer",
+          "region": "mazowieckie",
+          "olx": {
+            "id": 383
+          },
+          "otodom": {
+            "location": "mazowieckie/warszawa/warszawa/warszawa/wawer",
+            "region_id": "7",
+            "subregion_id": "197",
+            "city_id": "26",
+            "district_id": 48
+          },
+          "id": 12
+        },
+        {
+          "name": "Wesoła",
+          "region": "mazowieckie",
+          "olx": {
+            "id": 533
+          },
+          "otodom": {
+            "location": "mazowieckie/warszawa/warszawa/warszawa/wesola",
+            "region_id": "7",
+            "subregion_id": "197",
+            "city_id": "26",
+            "district_id": 49
+          },
+          "id": 13
+        },
+        {
+          "name": "Wilanów",
+          "region": "mazowieckie",
+          "olx": {
+            "id": 375
+          },
+          "otodom": {
+            "location": "mazowieckie/warszawa/warszawa/warszawa/wilanow",
+            "region_id": "7",
+            "subregion_id": "197",
+            "city_id": "26",
+            "district_id": 50
+          },
+          "id": 14
+        },
+        {
+          "name": "Włochy",
+          "region": "mazowieckie",
+          "olx": {
+            "id": 357
+          },
+          "otodom": {
+            "location": "mazowieckie/warszawa/warszawa/warszawa/wlochy",
+            "region_id": "7",
+            "subregion_id": "197",
+            "city_id": "26",
+            "district_id": 51
+          },
+          "id": 15
+        },
+        {
+          "name": "Wola",
+          "region": "mazowieckie",
+          "olx": {
+            "id": 359
+          },
+          "otodom": {
+            "location": "mazowieckie/warszawa/warszawa/warszawa/wola",
+            "region_id": "7",
+            "subregion_id": "197",
+            "city_id": "26",
+            "district_id": 117
+          },
+          "id": 16
+        },
+        {
+          "name": "Żoliborz",
+          "region": "mazowieckie",
+          "olx": {
+            "id": 363
+          },
+          "otodom": {
+            "location": "mazowieckie/warszawa/warszawa/warszawa/zoliborz",
+            "region_id": "7",
+            "subregion_id": "197",
+            "city_id": "26",
+            "district_id": 53
+          },
+          "id": 17
+        }
+      ],
+      "id": 0
+    },
+    {
+      "name": "Kraków",
+      "region": "malopolskie",
+      "olx": {
+        "id": 8959
+      },
+      "otodom": {
+        "location": "malopolskie/krakow/krakow/krakow",
+        "region_id": "6",
+        "subregion_id": "410",
+        "city_id": 38
+      },
+      "locations": [
+        {
+          "name": "Bieńczyce",
+          "region": "malopolskie",
+          "olx": {
+            "id": 285
+          },
+          "otodom": {
+            "location": "malopolskie/krakow/krakow/krakow/bienczyce",
+            "region_id": "6",
+            "subregion_id": "410",
+            "city_id": "38",
+            "district_id": 54
+          },
+          "id": 18
+        },
+        {
+          "name": "Bieżanów-Prokocim",
+          "region": "malopolskie",
+          "olx": {
+            "id": 271
+          },
+          "otodom": {
+            "location": "malopolskie/krakow/krakow/krakow/biezanow--prokocim",
+            "region_id": "6",
+            "subregion_id": "410",
+            "city_id": "38",
+            "district_id": 300498
+          },
+          "id": 19
+        },
+        {
+          "name": "Bronowice",
+          "region": "malopolskie",
+          "olx": {
+            "id": 259
+          },
+          "otodom": {
+            "location": "malopolskie/krakow/krakow/krakow/bronowice",
+            "region_id": "6",
+            "subregion_id": "410",
+            "city_id": "38",
+            "district_id": 126939
+          },
+          "id": 20
+        },
+        {
+          "name": "Czyżyny",
+          "region": "malopolskie",
+          "olx": {
+            "id": 283
+          },
+          "otodom": {
+            "location": "malopolskie/krakow/krakow/krakow/czyzyny",
+            "region_id": "6",
+            "subregion_id": "410",
+            "city_id": "38",
+            "district_id": 56
+          },
+          "id": 21
+        },
+        {
+          "name": "Dębniki",
+          "region": "malopolskie",
+          "olx": {
+            "id": 261
+          },
+          "otodom": {
+            "location": "malopolskie/krakow/krakow/krakow/debniki",
+            "region_id": "6",
+            "subregion_id": "410",
+            "city_id": "38",
+            "district_id": 57
+          },
+          "id": 22
+        },
+        {
+          "name": "Grzegórzki",
+          "region": "malopolskie",
+          "olx": {
+            "id": 279
+          },
+          "otodom": {
+            "location": "malopolskie/krakow/krakow/krakow/grzegorzki",
+            "region_id": "6",
+            "subregion_id": "410",
+            "city_id": "38",
+            "district_id": 58
+          },
+          "id": 23
+        },
+        {
+          "name": "Krowodrza",
+          "region": "malopolskie",
+          "olx": {
+            "id": 255
+          },
+          "otodom": {
+            "location": "malopolskie/krakow/krakow/krakow/krowodrza",
+            "region_id": "6",
+            "subregion_id": "410",
+            "city_id": "38",
+            "district_id": 342
+          },
+          "id": 24
+        },
+        {
+          "name": "Łagiewniki-Borek Fałęcki",
+          "region": "malopolskie",
+          "olx": {
+            "id": 265
+          },
+          "otodom": {
+            "location": "malopolskie/krakow/krakow/krakow/lagiewniki--borek-falecki",
+            "region_id": "6",
+            "subregion_id": "410",
+            "city_id": "38",
+            "district_id": 300482
+          },
+          "id": 25
+        },
+        {
+          "name": "Mistrzejowice",
+          "region": "malopolskie",
+          "olx": {
+            "id": 463
+          },
+          "otodom": {
+            "location": "malopolskie/krakow/krakow/krakow/mistrzejowice",
+            "region_id": "6",
+            "subregion_id": "410",
+            "city_id": "38",
+            "district_id": 62
+          },
+          "id": 26
+        },
+        {
+          "name": "Nowa Huta",
+          "region": "malopolskie",
+          "olx": {
+            "id": 287
+          },
+          "otodom": {
+            "location": "malopolskie/krakow/krakow/krakow/nowa-huta",
+            "region_id": "6",
+            "subregion_id": "410",
+            "city_id": "38",
+            "district_id": 63
+          },
+          "id": 27
+        },
+        {
+          "name": "Podgórze",
+          "region": "malopolskie",
+          "olx": {
+            "id": 263
+          },
+          "otodom": {
+            "location": "malopolskie/krakow/krakow/krakow/podgorze",
+            "region_id": "6",
+            "subregion_id": "410",
+            "city_id": "38",
+            "district_id": 64
+          },
+          "id": 28
+        },
+        {
+          "name": "Podgórze Duchackie",
+          "region": "malopolskie",
+          "olx": {
+            "id": 269
+          },
+          "otodom": {
+            "location": "malopolskie/krakow/krakow/krakow/podgorze-duchackie",
+            "region_id": "6",
+            "subregion_id": "410",
+            "city_id": "38",
+            "district_id": 300504
+          },
+          "id": 29
+        },
+        {
+          "name": "Prądnik Biały",
+          "region": "malopolskie",
+          "olx": {
+            "id": 275
+          },
+          "otodom": {
+            "location": "malopolskie/krakow/krakow/krakow/pradnik-bialy",
+            "region_id": "6",
+            "subregion_id": "410",
+            "city_id": "38",
+            "district_id": 65
+          },
+          "id": 30
+        },
+        {
+          "name": "Prądnik Czerwony",
+          "region": "malopolskie",
+          "olx": {
+            "id": 277
+          },
+          "otodom": {
+            "location": "malopolskie/krakow/krakow/krakow/pradnik-czerwony",
+            "region_id": "6",
+            "subregion_id": "410",
+            "city_id": "38",
+            "district_id": 66
+          },
+          "id": 31
+        },
+        {
+          "name": "Stare Miasto",
+          "region": "malopolskie",
+          "olx": {
+            "id": 273
+          },
+          "otodom": {
+            "location": "malopolskie/krakow/krakow/krakow/stare-miasto",
+            "region_id": "1",
+            "subregion_id": "381",
+            "city_id": "39",
+            "district_id": 1
+          },
+          "id": 32
+        },
+        {
+          "name": "Swoszowice",
+          "region": "malopolskie",
+          "olx": {
+            "id": 267
+          },
+          "otodom": {
+            "location": "malopolskie/krakow/krakow/krakow/swoszowice",
+            "region_id": "6",
+            "subregion_id": "410",
+            "city_id": "38",
+            "district_id": 68
+          },
+          "id": 33
+        },
+        {
+          "name": "Wzgórza Krzesławickie",
+          "region": "malopolskie",
+          "olx": {
+            "id": 281
+          },
+          "otodom": {
+            "location": "malopolskie/krakow/krakow/krakow/wzgorza-krzeslawickie",
+            "region_id": "6",
+            "subregion_id": "410",
+            "city_id": "38",
+            "district_id": 9143
+          },
+          "id": 34
+        },
+        {
+          "name": "Zwierzyniec",
+          "region": "malopolskie",
+          "olx": {
+            "id": 257
+          },
+          "otodom": {
+            "location": "malopolskie/krakow/krakow/krakow/zwierzyniec",
+            "region_id": "6",
+            "subregion_id": "410",
+            "city_id": "38",
+            "district_id": 71
+          },
+          "id": 35
+        }
+      ],
+      "id": 1
+    },
+    {
+      "name": "Łódź",
+      "region": "lodzkie",
+      "olx": {
+        "id": 10609
+      },
+      "otodom": {
+        "location": "lodzkie/lodz/lodz/lodz",
+        "region_id": "5",
+        "subregion_id": "127",
+        "city_id": 1004
+      },
+      "locations": [
+        {
+          "name": "Bałuty",
+          "region": "lodzkie",
+          "olx": {
+            "id": 301
+          },
+          "otodom": {
+            "location": "lodzkie/lodz/lodz/lodz/baluty",
+            "region_id": "5",
+            "subregion_id": "127",
+            "city_id": "1004",
+            "district_id": 110
+          },
+          "id": 36
+        },
+        {
+          "name": "Górna",
+          "region": "lodzkie",
+          "olx": {
+            "id": 303
+          },
+          "otodom": {
+            "location": "lodzkie/lodz/lodz/lodz/gorna",
+            "region_id": "5",
+            "subregion_id": "127",
+            "city_id": "1004",
+            "district_id": 111
+          },
+          "id": 37
+        },
+        {
+          "name": "Polesie",
+          "region": "lodzkie",
+          "olx": {
+            "id": 295
+          },
+          "otodom": {
+            "location": "lodzkie/lodz/lodz/lodz/polesie",
+            "region_id": "5",
+            "subregion_id": "127",
+            "city_id": "1004",
+            "district_id": 112
+          },
+          "id": 38
+        },
+        {
+          "name": "Śródmieście",
+          "region": "lodzkie",
+          "olx": {
+            "id": 299
+          },
+          "otodom": {
+            "location": "lodzkie/lodz/lodz/lodz/srodmiescie",
+            "region_id": "5",
+            "subregion_id": "127",
+            "city_id": "1004",
+            "district_id": 113
+          },
+          "id": 39
+        },
+        {
+          "name": "Widzew",
+          "region": "lodzkie",
+          "olx": {
+            "id": 297
+          },
+          "otodom": {
+            "location": "lodzkie/lodz/lodz/lodz/widzew",
+            "region_id": "5",
+            "subregion_id": "127",
+            "city_id": "1004",
+            "district_id": 114
+          },
+          "id": 40
+        }
+      ],
+      "id": 2
+    },
+    {
+      "name": "Wrocław",
+      "region": "dolnoslaskie",
+      "olx": {
+        "id": 19701
+      },
+      "otodom": {
+        "location": "dolnoslaskie/wroclaw/wroclaw/wroclaw",
+        "region_id": "1",
+        "subregion_id": "381",
+        "city_id": 39
+      },
+      "locations": [
+        {
+          "name": "Fabryczna",
+          "region": "dolnoslaskie",
+          "olx": {
+            "id": 393
+          },
+          "otodom": {
+            "location": "dolnoslaskie/wroclaw/wroclaw/wroclaw/fabryczna",
+            "region_id": "1",
+            "subregion_id": "381",
+            "city_id": "39",
+            "district_id": 5
+          },
+          "id": 41
+        },
+        {
+          "name": "Krzyki",
+          "region": "dolnoslaskie",
+          "olx": {
+            "id": 391
+          },
+          "otodom": {
+            "location": "dolnoslaskie/wroclaw/wroclaw/wroclaw/krzyki",
+            "region_id": "1",
+            "subregion_id": "381",
+            "city_id": "39",
+            "district_id": 3
+          },
+          "id": 42
+        },
+        {
+          "name": "Psie Pole",
+          "region": "dolnoslaskie",
+          "olx": {
+            "id": 389
+          },
+          "otodom": {
+            "location": "dolnoslaskie/wroclaw/wroclaw/wroclaw/psie-pole",
+            "region_id": "1",
+            "subregion_id": "381",
+            "city_id": "39",
+            "district_id": 4
+          },
+          "id": 43
+        },
+        {
+          "name": "Śródmieście",
+          "region": "dolnoslaskie",
+          "olx": {
+            "id": 387
+          },
+          "otodom": {
+            "location": "dolnoslaskie/wroclaw/wroclaw/wroclaw/srodmiescie",
+            "region_id": "1",
+            "subregion_id": "381",
+            "city_id": "39",
+            "district_id": 2
+          },
+          "id": 44
+        },
+        {
+          "name": "Stare Miasto",
+          "region": "dolnoslaskie",
+          "olx": {
+            "id": 385
+          },
+          "otodom": {
+            "location": "dolnoslaskie/wroclaw/wroclaw/wroclaw/stare-miasto",
+            "region_id": "1",
+            "subregion_id": "381",
+            "city_id": "39",
+            "district_id": 1
+          },
+          "id": 45
+        }
+      ],
+      "id": 3
+    },
+    {
+      "name": "Poznań",
+      "region": "wielkopolskie",
+      "olx": {
+        "id": 13983
+      },
+      "otodom": {
+        "location": "wielkopolskie/poznan/poznan/poznan",
+        "region_id": "15",
+        "subregion_id": "462",
+        "city_id": 1
+      },
+      "locations": [
+        {
+          "name": "Grunwald",
+          "region": "wielkopolskie",
+          "olx": {
+            "id": 323
+          },
+          "otodom": {
+            "location": "wielkopolskie/poznan/poznan/poznan/grunwald",
+            "region_id": "15",
+            "subregion_id": "462",
+            "city_id": "1",
+            "district_id": 79
+          },
+          "id": 46
+        },
+        {
+          "name": "Jeżyce",
+          "region": "wielkopolskie",
+          "olx": {
+            "id": 325
+          },
+          "otodom": {
+            "location": "wielkopolskie/poznan/poznan/poznan/jezyce",
+            "region_id": "15",
+            "subregion_id": "462",
+            "city_id": "1",
+            "district_id": 80
+          },
+          "id": 47
+        },
+        {
+          "name": "Stare Miasto",
+          "region": "wielkopolskie",
+          "olx": {
+            "id": 327
+          },
+          "otodom": {
+            "location": "wielkopolskie/poznan/poznan/poznan/stare-miasto",
+            "region_id": "1",
+            "subregion_id": "381",
+            "city_id": "39",
+            "district_id": 1
+          },
+          "id": 48
+        },
+        {
+          "name": "Wilda",
+          "region": "wielkopolskie",
+          "olx": {
+            "id": 331
+          },
+          "otodom": {
+            "location": "wielkopolskie/poznan/poznan/poznan/wilda",
+            "region_id": "15",
+            "subregion_id": "462",
+            "city_id": "1",
+            "district_id": 107
+          },
+          "id": 49
+        }
+      ],
+      "id": 4
+    },
+    {
+      "name": "Gdańsk",
+      "region": "pomorskie",
+      "olx": {
+        "id": 5659
+      },
+      "otodom": {
+        "location": "pomorskie/gdansk/gdansk/gdansk",
+        "region_id": "11",
+        "subregion_id": "439",
+        "city_id": 40
+      },
+      "locations": [
+        {
+          "name": "Aniołki",
+          "region": "pomorskie",
+          "olx": {
+            "id": 97
+          },
+          "otodom": {
+            "location": "pomorskie/gdansk/gdansk/gdansk/aniolki",
+            "region_id": "11",
+            "subregion_id": "439",
+            "city_id": "40",
+            "district_id": 300598
+          },
+          "id": 50
+        },
+        {
+          "name": "Brętowo",
+          "region": "pomorskie",
+          "olx": {
+            "id": 427
+          },
+          "otodom": {
+            "location": "pomorskie/gdansk/gdansk/gdansk/bretowo",
+            "region_id": "11",
+            "subregion_id": "439",
+            "city_id": "40",
+            "district_id": 7
+          },
+          "id": 51
+        },
+        {
+          "name": "Brzeźno",
+          "region": "pomorskie",
+          "olx": {
+            "id": 113
+          },
+          "otodom": {
+            "location": "pomorskie/gdansk/gdansk/gdansk/brzezno",
+            "region_id": "11",
+            "subregion_id": "439",
+            "city_id": "40",
+            "district_id": 8
+          },
+          "id": 52
+        },
+        {
+          "name": "Jasień",
+          "region": "pomorskie",
+          "olx": {
+            "id": 691
+          },
+          "otodom": {
+            "location": "pomorskie/gdansk/gdansk/gdansk/jasien",
+            "region_id": "11",
+            "subregion_id": "439",
+            "city_id": "40",
+            "district_id": 1195
+          },
+          "id": 53
+        },
+        {
+          "name": "Jelitkowo",
+          "region": "pomorskie",
+          "olx": {
+            "id": 111
+          },
+          "otodom": {
+            "location": "pomorskie/gdansk/gdansk/gdansk/jelitkowo",
+            "region_id": "11",
+            "subregion_id": "439",
+            "city_id": "40",
+            "district_id": 596
+          },
+          "id": 54
+        },
+        {
+          "name": "Kokoszki",
+          "region": "pomorskie",
+          "olx": {
+            "id": 423
+          },
+          "otodom": {
+            "location": "pomorskie/gdansk/gdansk/gdansk/kokoszki",
+            "region_id": "11",
+            "subregion_id": "439",
+            "city_id": "40",
+            "district_id": 10
+          },
+          "id": 55
+        },
+        {
+          "name": "Krakowiec - Górki Zachodnie",
+          "region": "pomorskie",
+          "olx": {
+            "id": 129
+          },
+          "otodom": {
+            "location": "pomorskie/gdansk/gdansk/gdansk/krakowiec--gorki-zachodnie",
+            "region_id": "11",
+            "subregion_id": "439",
+            "city_id": "40",
+            "district_id": 300606
+          },
+          "id": 56
+        },
+        {
+          "name": "Letnica",
+          "region": "pomorskie",
+          "olx": {
+            "id": 123
+          },
+          "otodom": {
+            "location": "pomorskie/gdansk/gdansk/gdansk/letnica",
+            "region_id": "11",
+            "subregion_id": "439",
+            "city_id": "40",
+            "district_id": 12
+          },
+          "id": 57
+        },
+        {
+          "name": "Matarnia",
+          "region": "pomorskie",
+          "olx": {
+            "id": 105
+          },
+          "otodom": {
+            "location": "pomorskie/gdansk/gdansk/gdansk/matarnia",
+            "region_id": "11",
+            "subregion_id": "439",
+            "city_id": "40",
+            "district_id": 13
+          },
+          "id": 58
+        },
+        {
+          "name": "Młyniska",
+          "region": "pomorskie",
+          "olx": {
+            "id": 137
+          },
+          "otodom": {
+            "location": "pomorskie/gdansk/gdansk/gdansk/mlyniska",
+            "region_id": "11",
+            "subregion_id": "439",
+            "city_id": "40",
+            "district_id": 14
+          },
+          "id": 59
+        },
+        {
+          "name": "Nowy Port",
+          "region": "pomorskie",
+          "olx": {
+            "id": 125
+          },
+          "otodom": {
+            "location": "pomorskie/gdansk/gdansk/gdansk/nowy-port",
+            "region_id": "11",
+            "subregion_id": "439",
+            "city_id": "40",
+            "district_id": 15
+          },
+          "id": 60
+        },
+        {
+          "name": "Oliwa",
+          "region": "pomorskie",
+          "olx": {
+            "id": 109
+          },
+          "otodom": {
+            "location": "pomorskie/gdansk/gdansk/gdansk/oliwa",
+            "region_id": "11",
+            "subregion_id": "439",
+            "city_id": "40",
+            "district_id": 16
+          },
+          "id": 61
+        },
+        {
+          "name": "Olszynka",
+          "region": "pomorskie",
+          "olx": {
+            "id": 133
+          },
+          "otodom": {
+            "location": "pomorskie/gdansk/gdansk/gdansk/olszynka",
+            "region_id": "11",
+            "subregion_id": "439",
+            "city_id": "40",
+            "district_id": 17
+          },
+          "id": 62
+        },
+        {
+          "name": "Orunia - Św. Wojciech - Lipce",
+          "region": "pomorskie",
+          "olx": {
+            "id": 91
+          },
+          "otodom": {
+            "location": "pomorskie/gdansk/gdansk/gdansk/orunia--sw.-wojciech--lipce",
+            "region_id": "11",
+            "subregion_id": "439",
+            "city_id": "40",
+            "district_id": 300610
+          },
+          "id": 63
+        },
+        {
+          "name": "Osowa",
+          "region": "pomorskie",
+          "olx": {
+            "id": 429
+          },
+          "otodom": {
+            "location": "pomorskie/gdansk/gdansk/gdansk/osowa",
+            "region_id": "11",
+            "subregion_id": "439",
+            "city_id": "40",
+            "district_id": 19
+          },
+          "id": 64
+        },
+        {
+          "name": "Piecki-Migowo",
+          "region": "pomorskie",
+          "olx": {
+            "id": 103
+          },
+          "otodom": {
+            "location": "pomorskie/gdansk/gdansk/gdansk/piecki--migowo",
+            "region_id": "11",
+            "subregion_id": "439",
+            "city_id": "40",
+            "district_id": 300602
+          },
+          "id": 65
+        },
+        {
+          "name": "Przymorze Małe",
+          "region": "pomorskie",
+          "olx": {
+            "id": 115
+          },
+          "otodom": {
+            "location": "pomorskie/gdansk/gdansk/gdansk/przymorze-male",
+            "region_id": "8",
+            "subregion_id": "215",
+            "city_id": 36583,
+            "district_id": null
+          },
+          "id": 66
+        },
+        {
+          "name": "Przymorze Wielkie",
+          "region": "pomorskie",
+          "olx": {
+            "id": 119
+          },
+          "otodom": {
+            "location": "pomorskie/gdansk/gdansk/gdansk/przymorze-wielkie",
+            "region_id": "8",
+            "subregion_id": "215",
+            "city_id": 49930,
+            "district_id": null
+          },
+          "id": 67
+        },
+        {
+          "name": "Rudniki",
+          "region": "pomorskie",
+          "olx": {
+            "id": 131
+          },
+          "otodom": {
+            "location": "pomorskie/gdansk/gdansk/gdansk/rudniki",
+            "region_id": "11",
+            "subregion_id": "439",
+            "city_id": "40",
+            "district_id": 23
+          },
+          "id": 68
+        },
+        {
+          "name": "Siedlce",
+          "region": "pomorskie",
+          "olx": {
+            "id": 95
+          },
+          "otodom": {
+            "location": "pomorskie/gdansk/gdansk/gdansk/siedlce",
+            "region_id": "7",
+            "subregion_id": "420",
+            "city_id": 197,
+            "district_id": null
+          },
+          "id": 69
+        },
+        {
+          "name": "Śródmieście",
+          "region": "pomorskie",
+          "olx": {
+            "id": 135
+          },
+          "otodom": {
+            "location": "pomorskie/gdansk/gdansk/gdansk/srodmiescie",
+            "region_id": "11",
+            "subregion_id": "439",
+            "city_id": "40",
+            "district_id": 28
+          },
+          "id": 70
+        },
+        {
+          "name": "Strzyża",
+          "region": "pomorskie",
+          "olx": {
+            "id": 101
+          },
+          "otodom": {
+            "location": "pomorskie/gdansk/gdansk/gdansk/strzyza",
+            "region_id": "11",
+            "subregion_id": "439",
+            "city_id": "40",
+            "district_id": 300644
+          },
+          "id": 71
+        },
+        {
+          "name": "Suchanino",
+          "region": "pomorskie",
+          "olx": {
+            "id": 425
+          },
+          "otodom": {
+            "location": "pomorskie/gdansk/gdansk/gdansk/suchanino",
+            "region_id": "11",
+            "subregion_id": "439",
+            "city_id": "40",
+            "district_id": 27
+          },
+          "id": 72
+        },
+        {
+          "name": "Ujeścisko - Łostowice",
+          "region": "pomorskie",
+          "olx": {
+            "id": 770
+          },
+          "otodom": {
+            "location": "pomorskie/gdansk/gdansk/gdansk/ujescisko--lostowice",
+            "region_id": "11",
+            "subregion_id": "439",
+            "city_id": "40",
+            "district_id": 300614
+          },
+          "id": 73
+        },
+        {
+          "name": "VII Dwór",
+          "region": "pomorskie",
+          "olx": {
+            "id": 107
+          },
+          "otodom": {
+            "location": "pomorskie/gdansk/gdansk/gdansk/vii-dwor",
+            "region_id": "11",
+            "subregion_id": "439",
+            "city_id": "40",
+            "district_id": null
+          },
+          "id": 74
+        },
+        {
+          "name": "Wyspa Sobieszewska",
+          "region": "pomorskie",
+          "olx": {
+            "id": 499
+          },
+          "otodom": {
+            "location": "pomorskie/gdansk/gdansk/gdansk/wyspa-sobieszewska",
+            "region_id": "11",
+            "subregion_id": "439",
+            "city_id": "40",
+            "district_id": 300604
+          },
+          "id": 75
+        },
+        {
+          "name": "Wzgórze Mickiewicza",
+          "region": "pomorskie",
+          "olx": {
+            "id": 421
+          },
+          "otodom": {
+            "location": "pomorskie/gdansk/gdansk/gdansk/wzgorze-mickiewicza",
+            "region_id": "11",
+            "subregion_id": "439",
+            "city_id": "40",
+            "district_id": 300612
+          },
+          "id": 76
+        }
+      ],
+      "id": 5
+    },
+    {
+      "name": "Lublin",
+      "region": "lubelskie",
+      "olx": {
+        "id": 10119
+      },
+      "otodom": {
+        "location": "lubelskie/lublin/lublin/lublin",
+        "region_id": "3",
+        "subregion_id": "396",
+        "city_id": 190
+      },
+      "locations": [],
+      "id": 6
+    },
+    {
+      "name": "Katowice",
+      "region": "slaskie",
+      "olx": {
+        "id": 7691
+      },
+      "otodom": {
+        "location": "slaskie/katowice/katowice/katowice",
+        "region_id": "12",
+        "subregion_id": "306",
+        "city_id": 172
+      },
+      "locations": [
+        {
+          "name": "Bogucice",
+          "region": "slaskie",
+          "olx": {
+            "id": 221
+          },
+          "otodom": {
+            "location": "slaskie/katowice/katowice/katowice/bogucice",
+            "region_id": "12",
+            "subregion_id": "306",
+            "city_id": "172",
+            "district_id": 1116
+          },
+          "id": 77
+        },
+        {
+          "name": "Brynów Zgrzebioka",
+          "region": "slaskie",
+          "olx": {
+            "id": 231
+          },
+          "otodom": {
+            "location": "slaskie/katowice/katowice/katowice/brynow--osiedle-zgrzebnioka",
+            "region_id": "12",
+            "subregion_id": "306",
+            "city_id": "172",
+            "district_id": 300528
+          },
+          "id": 78
+        },
+        {
+          "name": "Dąb",
+          "region": "slaskie",
+          "olx": {
+            "id": 453
+          },
+          "otodom": {
+            "location": "slaskie/katowice/katowice/katowice/dab",
+            "region_id": "12",
+            "subregion_id": "306",
+            "city_id": "172",
+            "district_id": 4428
+          },
+          "id": 79
+        },
+        {
+          "name": "Dąbrówka Mała",
+          "region": "slaskie",
+          "olx": {
+            "id": 225
+          },
+          "otodom": {
+            "location": "slaskie/katowice/katowice/katowice/dabrowka-mala",
+            "region_id": "12",
+            "subregion_id": "306",
+            "city_id": "172",
+            "district_id": 309
+          },
+          "id": 80
+        },
+        {
+          "name": "Giszowiec",
+          "region": "slaskie",
+          "olx": {
+            "id": 229
+          },
+          "otodom": {
+            "location": "slaskie/katowice/katowice/katowice/giszowiec",
+            "region_id": "12",
+            "subregion_id": "306",
+            "city_id": "172",
+            "district_id": 785
+          },
+          "id": 81
+        },
+        {
+          "name": "Janów-Nikiszowiec",
+          "region": "slaskie",
+          "olx": {
+            "id": 223
+          },
+          "otodom": {
+            "location": "slaskie/katowice/katowice/katowice/janow--nikiszowiec",
+            "region_id": "12",
+            "subregion_id": "306",
+            "city_id": "172",
+            "district_id": 300544
+          },
+          "id": 82
+        },
+        {
+          "name": "Kostuchna",
+          "region": "slaskie",
+          "olx": {
+            "id": 455
+          },
+          "otodom": {
+            "location": "slaskie/katowice/katowice/katowice/kostuchna",
+            "region_id": "12",
+            "subregion_id": "306",
+            "city_id": "172",
+            "district_id": 4472
+          },
+          "id": 83
+        },
+        {
+          "name": "Koszutka",
+          "region": "slaskie",
+          "olx": {
+            "id": 217
+          },
+          "otodom": {
+            "location": "slaskie/katowice/katowice/katowice/koszutka",
+            "region_id": "12",
+            "subregion_id": "306",
+            "city_id": "172",
+            "district_id": 1209
+          },
+          "id": 84
+        },
+        {
+          "name": "Ligota-Panewniki",
+          "region": "slaskie",
+          "olx": {
+            "id": 237
+          },
+          "otodom": {
+            "location": "slaskie/katowice/katowice/katowice/ligota--panewniki",
+            "region_id": "12",
+            "subregion_id": "306",
+            "city_id": "172",
+            "district_id": 300524
+          },
+          "id": 85
+        },
+        {
+          "name": "Murcki",
+          "region": "slaskie",
+          "olx": {
+            "id": 241
+          },
+          "otodom": {
+            "location": "slaskie/katowice/katowice/katowice/murcki",
+            "region_id": "12",
+            "subregion_id": "306",
+            "city_id": "172",
+            "district_id": 1293
+          },
+          "id": 86
+        },
+        {
+          "name": "Osiedle Paderewskiego-Muchowiec",
+          "region": "slaskie",
+          "olx": {
+            "id": 215
+          },
+          "otodom": {
+            "location": "slaskie/katowice/katowice/katowice/osiedle-paderewskiego--muchowiec",
+            "region_id": "12",
+            "subregion_id": "306",
+            "city_id": "172",
+            "district_id": 300532
+          },
+          "id": 87
+        },
+        {
+          "name": "Osiedle Tysiąclecia",
+          "region": "slaskie",
+          "olx": {
+            "id": 247
+          },
+          "otodom": {
+            "location": "slaskie/katowice/katowice/katowice/osiedle-tysiaclecia",
+            "region_id": "12",
+            "subregion_id": "306",
+            "city_id": "172",
+            "district_id": 120197
+          },
+          "id": 88
+        },
+        {
+          "name": "Osiedle Witosa",
+          "region": "slaskie",
+          "olx": {
+            "id": 243
+          },
+          "otodom": {
+            "location": "slaskie/katowice/katowice/katowice/osiedle-witosa",
+            "region_id": "12",
+            "subregion_id": "306",
+            "city_id": "172",
+            "district_id": 7467
+          },
+          "id": 89
+        },
+        {
+          "name": "Piotrowice-Ochojec",
+          "region": "slaskie",
+          "olx": {
+            "id": 235
+          },
+          "otodom": {
+            "location": "slaskie/katowice/katowice/katowice/piotrowice--ochojec",
+            "region_id": "12",
+            "subregion_id": "306",
+            "city_id": "172",
+            "district_id": 300546
+          },
+          "id": 90
+        },
+        {
+          "name": "Podlesie",
+          "region": "slaskie",
+          "olx": {
+            "id": 511
+          },
+          "otodom": {
+            "location": "slaskie/katowice/katowice/katowice/podlesie",
+            "region_id": "12",
+            "subregion_id": "306",
+            "city_id": "172",
+            "district_id": 1090
+          },
+          "id": 91
+        },
+        {
+          "name": "Śródmieście",
+          "region": "slaskie",
+          "olx": {
+            "id": 211
+          },
+          "otodom": {
+            "location": "slaskie/katowice/katowice/katowice/srodmiescie",
+            "region_id": "12",
+            "subregion_id": "12",
+            "city_id": "172",
+            "district_id": 1411
+          },
+          "id": 92
+        },
+        {
+          "name": "Szopienice-Burowiec",
+          "region": "slaskie",
+          "olx": {
+            "id": 227
+          },
+          "otodom": {
+            "location": "slaskie/katowice/katowice/katowice/szopienice--burowiec",
+            "region_id": "12",
+            "subregion_id": "306",
+            "city_id": "172",
+            "district_id": 300542
+          },
+          "id": 93
+        },
+        {
+          "name": "Wełnowiec-Józefowiec",
+          "region": "slaskie",
+          "olx": {
+            "id": 219
+          },
+          "otodom": {
+            "location": "slaskie/katowice/katowice/katowice/welnowiec--jozefowiec",
+            "region_id": "12",
+            "subregion_id": "306",
+            "city_id": "172",
+            "district_id": 300534
+          },
+          "id": 94
+        },
+        {
+          "name": "Załęska Hałda",
+          "region": "slaskie",
+          "olx": {
+            "id": 233
+          },
+          "otodom": {
+            "location": "slaskie/katowice/katowice/katowice/zaleska-halda--brynow",
+            "region_id": "12",
+            "subregion_id": "306",
+            "city_id": "172",
+            "district_id": 21892
+          },
+          "id": 95
+        },
+        {
+          "name": "Załęże",
+          "region": "slaskie",
+          "olx": {
+            "id": 245
+          },
+          "otodom": {
+            "location": "slaskie/katowice/katowice/katowice/zaleze",
+            "region_id": "12",
+            "subregion_id": "306",
+            "city_id": "172",
+            "district_id": 4557
+          },
+          "id": 96
+        },
+        {
+          "name": "Zarzecze",
+          "region": "slaskie",
+          "olx": {
+            "id": 239
+          },
+          "otodom": {
+            "location": "slaskie/katowice/katowice/katowice/zarzecze",
+            "region_id": "12",
+            "subregion_id": "306",
+            "city_id": "172",
+            "district_id": 1912
+          },
+          "id": 97
+        },
+        {
+          "name": "Zawodzie",
+          "region": "slaskie",
+          "olx": {
+            "id": 213
+          },
+          "otodom": {
+            "location": "slaskie/katowice/katowice/katowice/zawodzie",
+            "region_id": "12",
+            "subregion_id": "306",
+            "city_id": "172",
+            "district_id": 4516
+          },
+          "id": 98
+        }
+      ],
+      "id": 7
+    },
+    {
+      "name": "Białystok",
+      "region": "podlaskie",
+      "olx": {
+        "id": 1079
+      },
+      "otodom": {
+        "location": "podlaskie/bialystok/bialystok/bialystok",
+        "region_id": "10",
+        "subregion_id": "434",
+        "city_id": 204
+      },
+      "locations": [
+        {
+          "name": "Antoniuk",
+          "region": "podlaskie",
+          "olx": {
+            "id": 61
+          },
+          "otodom": {
+            "location": "podlaskie/bialystok/bialystok/bialystok/antoniuk",
+            "region_id": "10",
+            "subregion_id": "434",
+            "city_id": "204",
+            "district_id": 253
+          },
+          "id": 99
+        },
+        {
+          "name": "Bacieczki",
+          "region": "podlaskie",
+          "olx": {
+            "id": 55
+          },
+          "otodom": {
+            "location": "podlaskie/bialystok/bialystok/bialystok/bacieczki",
+            "region_id": "10",
+            "subregion_id": "434",
+            "city_id": "204",
+            "district_id": 642
+          },
+          "id": 100
+        },
+        {
+          "name": "Bema",
+          "region": "podlaskie",
+          "olx": {
+            "id": 41
+          },
+          "otodom": {
+            "location": "podlaskie/bialystok/bialystok/bialystok/bema",
+            "region_id": "10",
+            "subregion_id": "434",
+            "city_id": "204",
+            "district_id": 4459
+          },
+          "id": 101
+        },
+        {
+          "name": "Białostoczek",
+          "region": "podlaskie",
+          "olx": {
+            "id": 17
+          },
+          "otodom": {
+            "location": "podlaskie/bialystok/bialystok/bialystok/bialostoczek",
+            "region_id": "10",
+            "subregion_id": "434",
+            "city_id": "204",
+            "district_id": 1746
+          },
+          "id": 102
+        },
+        {
+          "name": "Bojary",
+          "region": "podlaskie",
+          "olx": {
+            "id": 11
+          },
+          "otodom": {
+            "location": "podlaskie/bialystok/bialystok/bialystok/bojary",
+            "region_id": "10",
+            "subregion_id": "434",
+            "city_id": "204",
+            "district_id": 4096
+          },
+          "id": 103
+        },
+        {
+          "name": "Centrum",
+          "region": "podlaskie",
+          "olx": {
+            "id": 15
+          },
+          "otodom": {
+            "location": "podlaskie/bialystok/bialystok/bialystok/centrum",
+            "region_id": "2",
+            "subregion_id": "386",
+            "city_id": "184",
+            "district_id": 1132
+          },
+          "id": 104
+        },
+        {
+          "name": "Dojlidy",
+          "region": "podlaskie",
+          "olx": {
+            "id": 7
+          },
+          "otodom": {
+            "location": "podlaskie/bialystok/bialystok/bialystok/dojlidy",
+            "region_id": "10",
+            "subregion_id": "434",
+            "city_id": "204",
+            "district_id": 21872
+          },
+          "id": 105
+        },
+        {
+          "name": "Dojlidy Górne",
+          "region": "podlaskie",
+          "olx": {
+            "id": 47
+          },
+          "otodom": {
+            "location": "podlaskie/bialystok/bialystok/bialystok/dojlidy-gorne",
+            "region_id": "10",
+            "subregion_id": "434",
+            "city_id": "204",
+            "district_id": 9962
+          },
+          "id": 106
+        },
+        {
+          "name": "Jaroszówka",
+          "region": "podlaskie",
+          "olx": {
+            "id": 19
+          },
+          "otodom": {
+            "location": "podlaskie/bialystok/bialystok/bialystok/jaroszowka",
+            "region_id": "10",
+            "subregion_id": "434",
+            "city_id": "204",
+            "district_id": 20209
+          },
+          "id": 107
+        },
+        {
+          "name": "Kawaleryjskie",
+          "region": "podlaskie",
+          "olx": {
+            "id": 37
+          },
+          "otodom": {
+            "location": "podlaskie/bialystok/bialystok/bialystok/kawaleryjskie",
+            "region_id": "3",
+            "subregion_id": "396",
+            "city_id": "190",
+            "district_id": "1180"
+          },
+          "id": 108
+        },
+        {
+          "name": "Leśna Dolina",
+          "region": "podlaskie",
+          "olx": {
+            "id": 399
+          },
+          "otodom": {
+            "location": "podlaskie/bialystok/bialystok/bialystok/lesna-dolina",
+            "region_id": "10",
+            "subregion_id": "434",
+            "city_id": "204",
+            "district_id": 3553
+          },
+          "id": 109
+        },
+        {
+          "name": "Mickiewicza",
+          "region": "podlaskie",
+          "olx": {
+            "id": 27
+          },
+          "otodom": {
+            "location": "podlaskie/bialystok/bialystok/bialystok/mickiewicza",
+            "region_id": "10",
+            "subregion_id": "434",
+            "city_id": "204",
+            "district_id": 5421
+          },
+          "id": 110
+        },
+        {
+          "name": "Młodych",
+          "region": "podlaskie",
+          "olx": {
+            "id": 53
+          },
+          "otodom": {
+            "location": "podlaskie/bialystok/bialystok/bialystok/mlodych",
+            "region_id": "10",
+            "subregion_id": "434",
+            "city_id": "204",
+            "district_id": 16972
+          },
+          "id": 111
+        },
+        {
+          "name": "Nowe Miasto",
+          "region": "podlaskie",
+          "olx": {
+            "id": 39
+          },
+          "otodom": {
+            "location": "podlaskie/bialystok/bialystok/bialystok/nowe-miasto",
+            "region_id": "10",
+            "subregion_id": "434",
+            "city_id": "204",
+            "district_id": 3196
+          },
+          "id": 112
+        },
+        {
+          "name": "Piaski",
+          "region": "podlaskie",
+          "olx": {
+            "id": 35
+          },
+          "otodom": {
+            "location": "podlaskie/bialystok/bialystok/bialystok/piaski",
+            "region_id": "10",
+            "subregion_id": "434",
+            "city_id": "204",
+            "district_id": 1106
+          },
+          "id": 113
+        },
+        {
+          "name": "Piasta I",
+          "region": "podlaskie",
+          "olx": {
+            "id": 23
+          },
+          "otodom": {
+            "location": "podlaskie/bialystok/bialystok/bialystok/piasta-i",
+            "region_id": "10",
+            "subregion_id": "434",
+            "city_id": "204",
+            "district_id": 104024
+          },
+          "id": 114
+        },
+        {
+          "name": "Piasta II",
+          "region": "podlaskie",
+          "olx": {
+            "id": 13
+          },
+          "otodom": {
+            "location": "podlaskie/bialystok/bialystok/bialystok/piasta-ii",
+            "region_id": "10",
+            "subregion_id": "434",
+            "city_id": "204",
+            "district_id": 96300
+          },
+          "id": 115
+        },
+        {
+          "name": "Przydworcowe",
+          "region": "podlaskie",
+          "olx": {
+            "id": 43
+          },
+          "otodom": {
+            "location": "podlaskie/bialystok/bialystok/bialystok/przydworcowe",
+            "region_id": "10",
+            "subregion_id": "434",
+            "city_id": "204",
+            "district_id": 3721
+          },
+          "id": 116
+        },
+        {
+          "name": "Sienkiewicza",
+          "region": "podlaskie",
+          "olx": {
+            "id": 9
+          },
+          "otodom": {
+            "location": "podlaskie/bialystok/bialystok/bialystok/sienkiewicza",
+            "region_id": "10",
+            "subregion_id": "434",
+            "city_id": "204",
+            "district_id": 6714
+          },
+          "id": 117
+        },
+        {
+          "name": "Skorupy",
+          "region": "podlaskie",
+          "olx": {
+            "id": 25
+          },
+          "otodom": {
+            "location": "podlaskie/bialystok/bialystok/bialystok/skorupy",
+            "region_id": "10",
+            "subregion_id": "434",
+            "city_id": "204",
+            "district_id": 14406
+          },
+          "id": 118
+        },
+        {
+          "name": "Słoneczny Stok",
+          "region": "podlaskie",
+          "olx": {
+            "id": 63
+          },
+          "otodom": {
+            "location": "podlaskie/bialystok/bialystok/bialystok/sloneczny-stok",
+            "region_id": "10",
+            "subregion_id": "434",
+            "city_id": "204",
+            "district_id": 5419
+          },
+          "id": 119
+        },
+        {
+          "name": "Starosielce",
+          "region": "podlaskie",
+          "olx": {
+            "id": 49
+          },
+          "otodom": {
+            "location": "podlaskie/bialystok/bialystok/bialystok/starosielce",
+            "region_id": "10",
+            "subregion_id": "434",
+            "city_id": "204",
+            "district_id": 4257
+          },
+          "id": 120
+        },
+        {
+          "name": "Wygoda",
+          "region": "podlaskie",
+          "olx": {
+            "id": 21
+          },
+          "otodom": {
+            "location": "podlaskie/bialystok/bialystok/bialystok/wygoda",
+            "region_id": "10",
+            "subregion_id": "434",
+            "city_id": "204",
+            "district_id": 4945
+          },
+          "id": 121
+        },
+        {
+          "name": "Wysoki Stoczek",
+          "region": "podlaskie",
+          "olx": {
+            "id": 57
+          },
+          "otodom": {
+            "location": "podlaskie/bialystok/bialystok/bialystok/wysoki-stoczek",
+            "region_id": "10",
+            "subregion_id": "434",
+            "city_id": "204",
+            "district_id": 4286
+          },
+          "id": 122
+        },
+        {
+          "name": "Zawady",
+          "region": "podlaskie",
+          "olx": {
+            "id": 45
+          },
+          "otodom": {
+            "location": "podlaskie/bialystok/bialystok/bialystok/zawady",
+            "region_id": "7",
+            "subregion_id": "197",
+            "city_id": "26",
+            "district_id": 8291
+          },
+          "id": 123
+        },
+        {
+          "name": "Zielone Wzgórza",
+          "region": "podlaskie",
+          "olx": {
+            "id": 51
+          },
+          "otodom": {
+            "location": "podlaskie/bialystok/bialystok/bialystok/zielone-wzgorza",
+            "region_id": "10",
+            "subregion_id": "434",
+            "city_id": "204",
+            "district_id": 3434
+          },
+          "id": 124
+        }
+      ],
+      "id": 8
+    },
+    {
+      "name": "Gdynia",
+      "region": "pomorskie",
+      "olx": {
+        "id": 5849
+      },
+      "otodom": {
+        "location": "pomorskie/gdynia/gdynia/gdynia",
+        "region_id": "11",
+        "subregion_id": "278",
+        "city_id": 206
+      },
+      "locations": [
+        {
+          "name": "Babie Doły",
+          "region": "pomorskie",
+          "olx": {
+            "id": 593
+          },
+          "otodom": {
+            "location": "pomorskie/gdynia/gdynia/gdynia/babie-doly",
+            "region_id": "11",
+            "subregion_id": "278",
+            "city_id": "206",
+            "district_id": 1144
+          },
+          "id": 125
+        },
+        {
+          "name": "Chwarzno-Wiczlino",
+          "region": "pomorskie",
+          "olx": {
+            "id": 147
+          },
+          "otodom": {
+            "location": "pomorskie/gdynia/gdynia/gdynia/chwarzno",
+            "region_id": "11",
+            "subregion_id": "278",
+            "city_id": "206",
+            "district_id": 6669
+          },
+          "id": 126
+        },
+        {
+          "name": "Chylonia",
+          "region": "pomorskie",
+          "olx": {
+            "id": 139
+          },
+          "otodom": {
+            "location": "pomorskie/gdynia/gdynia/gdynia/chylonia",
+            "region_id": "11",
+            "subregion_id": "278",
+            "city_id": "206",
+            "district_id": 201
+          },
+          "id": 127
+        },
+        {
+          "name": "Cisowa",
+          "region": "pomorskie",
+          "olx": {
+            "id": 141
+          },
+          "otodom": {
+            "location": "pomorskie/gdynia/gdynia/gdynia/cisowa",
+            "region_id": "11",
+            "subregion_id": "278",
+            "city_id": "206",
+            "district_id": 135
+          },
+          "id": 128
+        },
+        {
+          "name": "Dąbrowa",
+          "region": "pomorskie",
+          "olx": {
+            "id": 175
+          },
+          "otodom": {
+            "location": "pomorskie/gdynia/gdynia/gdynia/dabrowa",
+            "region_id": "11",
+            "subregion_id": "278",
+            "city_id": "206",
+            "district_id": 170
+          },
+          "id": 129
+        },
+        {
+          "name": "Działki Leśne",
+          "region": "pomorskie",
+          "olx": {
+            "id": 157
+          },
+          "otodom": {
+            "location": "pomorskie/gdynia/gdynia/gdynia/dzialki-lesne",
+            "region_id": "11",
+            "subregion_id": "278",
+            "city_id": "206",
+            "district_id": 1059
+          },
+          "id": 130
+        },
+        {
+          "name": "Grabówek",
+          "region": "pomorskie",
+          "olx": {
+            "id": 155
+          },
+          "otodom": {
+            "location": "pomorskie/gdynia/gdynia/gdynia/grabowek",
+            "region_id": "11",
+            "subregion_id": "278",
+            "city_id": "206",
+            "district_id": 1347
+          },
+          "id": 131
+        },
+        {
+          "name": "Kamienna Góra",
+          "region": "pomorskie",
+          "olx": {
+            "id": 161
+          },
+          "otodom": {
+            "location": "pomorskie/gdynia/gdynia/gdynia/kamienna-gora",
+            "region_id": "11",
+            "subregion_id": "278",
+            "city_id": "206",
+            "district_id": 975
+          },
+          "id": 132
+        },
+        {
+          "name": "Karwiny",
+          "region": "pomorskie",
+          "olx": {
+            "id": 171
+          },
+          "otodom": {
+            "location": "pomorskie/gdynia/gdynia/gdynia/karwiny",
+            "region_id": "11",
+            "subregion_id": "278",
+            "city_id": "206",
+            "district_id": 234
+          },
+          "id": 133
+        },
+        {
+          "name": "Leszczynki",
+          "region": "pomorskie",
+          "olx": {
+            "id": 153
+          },
+          "otodom": {
+            "location": "pomorskie/gdynia/gdynia/gdynia/leszczynki",
+            "region_id": "11",
+            "subregion_id": "278",
+            "city_id": "206",
+            "district_id": 959
+          },
+          "id": 134
+        },
+        {
+          "name": "Mały Kack",
+          "region": "pomorskie",
+          "olx": {
+            "id": 167
+          },
+          "otodom": {
+            "location": "pomorskie/gdynia/gdynia/gdynia/maly-kack",
+            "region_id": "11",
+            "subregion_id": "278",
+            "city_id": "206",
+            "district_id": 1722
+          },
+          "id": 135
+        },
+        {
+          "name": "Obłuże",
+          "region": "pomorskie",
+          "olx": {
+            "id": 151
+          },
+          "otodom": {
+            "location": "pomorskie/gdynia/gdynia/gdynia/obluze",
+            "region_id": "11",
+            "subregion_id": "278",
+            "city_id": "206",
+            "district_id": 241
+          },
+          "id": 136
+        },
+        {
+          "name": "Oksywie",
+          "region": "pomorskie",
+          "olx": {
+            "id": 145
+          },
+          "otodom": {
+            "location": "pomorskie/gdynia/gdynia/gdynia/oksywie",
+            "region_id": "11",
+            "subregion_id": "278",
+            "city_id": "206",
+            "district_id": 337
+          },
+          "id": 137
+        },
+        {
+          "name": "Orłowo",
+          "region": "pomorskie",
+          "olx": {
+            "id": 169
+          },
+          "otodom": {
+            "location": "pomorskie/gdynia/gdynia/gdynia/orlowo",
+            "region_id": "11",
+            "subregion_id": "278",
+            "city_id": "206",
+            "district_id": 156
+          },
+          "id": 138
+        },
+        {
+          "name": "Pogórze",
+          "region": "pomorskie",
+          "olx": {
+            "id": 149
+          },
+          "otodom": {
+            "location": "pomorskie/gdynia/gdynia/gdynia/pogorze",
+            "region_id": "11",
+            "subregion_id": "278",
+            "city_id": "206",
+            "district_id": 1193
+          },
+          "id": 139
+        },
+        {
+          "name": "Pustki Cisowskie-Demptowo",
+          "region": "pomorskie",
+          "olx": {
+            "id": 143
+          },
+          "otodom": {
+            "location": "pomorskie/gdynia/gdynia/gdynia/pustki-cisowskie",
+            "region_id": "11",
+            "subregion_id": "278",
+            "city_id": "206",
+            "district_id": 16885
+          },
+          "id": 140
+        },
+        {
+          "name": "Redłowo",
+          "region": "pomorskie",
+          "olx": {
+            "id": 165
+          },
+          "otodom": {
+            "location": "pomorskie/gdynia/gdynia/gdynia/redlowo",
+            "region_id": "11",
+            "subregion_id": "278",
+            "city_id": "206",
+            "district_id": 598
+          },
+          "id": 141
+        },
+        {
+          "name": "Śródmieście",
+          "region": "pomorskie",
+          "olx": {
+            "id": 159
+          },
+          "otodom": {
+            "location": "pomorskie/gdynia/gdynia/gdynia/srodmiescie",
+            "region_id": "11",
+            "subregion_id": "278",
+            "city_id": "206",
+            "district_id": 244
+          },
+          "id": 142
+        },
+        {
+          "name": "Wielki Kack",
+          "region": "pomorskie",
+          "olx": {
+            "id": 173
+          },
+          "otodom": {
+            "location": "pomorskie/gdynia/gdynia/gdynia/wielki-kack",
+            "region_id": "11",
+            "subregion_id": "278",
+            "city_id": "206",
+            "district_id": 144
+          },
+          "id": 143
+        },
+        {
+          "name": "Witomino-Leśniczówka",
+          "region": "pomorskie",
+          "olx": {
+            "id": 177
+          },
+          "otodom": {
+            "location": "pomorskie/gdynia/gdynia/gdynia/witomino--lesniczowka",
+            "region_id": "11",
+            "subregion_id": "278",
+            "city_id": "206",
+            "district_id": 1645
+          },
+          "id": 144
+        },
+        {
+          "name": "Witomino-Radiostacja",
+          "region": "pomorskie",
+          "olx": {
+            "id": 179
+          },
+          "otodom": {
+            "location": "pomorskie/gdynia/gdynia/gdynia/witomino--radiostacja",
+            "region_id": "11",
+            "subregion_id": "278",
+            "city_id": "206",
+            "district_id": 236
+          },
+          "id": 145
+        },
+        {
+          "name": "Wzgórze Św. Maksymiliana",
+          "region": "pomorskie",
+          "olx": {
+            "id": 163
+          },
+          "otodom": {
+            "location": "pomorskie/gdynia/gdynia/gdynia/wzgorze-sw.-maksymiliana",
+            "region_id": "11",
+            "subregion_id": "278",
+            "city_id": "206",
+            "district_id": 60952
+          },
+          "id": 146
+        }
+      ],
+      "id": 9
+    },
+    {
+      "name": "Radom",
+      "region": "mazowieckie",
+      "olx": {
+        "id": 14673
+      },
+      "otodom": {
+        "location": "mazowieckie/radom/radom/radom",
+        "region_id": "7",
+        "subregion_id": "419",
+        "city_id": 196
+      },
+      "locations": [],
+      "id": 10
+    },
+    {
+      "name": "Toruń",
+      "region": "kujawsko-pomorskie",
+      "olx": {
+        "id": 38395
+      },
+      "otodom": {
+        "location": "kujawsko--pomorskie/torun/torun/torun",
+        "region_id": "2",
+        "subregion_id": "388",
+        "city_id": 186
+      },
+      "locations": [],
+      "id": 11
+    },
+    {
+      "name": "Kielce",
+      "region": "swietokrzyskie",
+      "olx": {
+        "id": 7971
+      },
+      "otodom": {
+        "location": "swietokrzyskie/kielce/kielce/kielce",
+        "region_id": "13",
+        "subregion_id": "450",
+        "city_id": 181
+      },
+      "locations": [],
+      "id": 12
+    }
+  ]
