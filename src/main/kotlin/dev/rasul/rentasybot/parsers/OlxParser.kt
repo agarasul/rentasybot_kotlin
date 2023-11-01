@@ -1,3 +1,4 @@
+
 import com.google.gson.Gson
 import com.google.gson.JsonObject
 import com.google.gson.reflect.TypeToken
@@ -103,6 +104,11 @@ class OlxParser(
 
             val request = Request.Builder()
                 .url(url)
+//                .apply {
+//                    headers.forEach {
+//                        addHeader(it.key,it.value)
+//                    }
+//                }
                 .get()
 
             val response = okHttpClient.newCall(request.build()).execute().use {
@@ -229,7 +235,8 @@ class OlxParser(
             price = price,
             administrativeRent = administrativeRent,
             area = area,
-            url = url
+            url = url,
+            createdAt = ad["last_refresh_time"].asString
         )
 
 

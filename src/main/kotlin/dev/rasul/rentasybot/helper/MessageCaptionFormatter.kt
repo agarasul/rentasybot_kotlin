@@ -5,15 +5,21 @@ import dev.rasul.rentasybot.models.AdFeature
 import dev.rasul.rentasybot.models.UserInfo
 import java.text.DecimalFormat
 import java.text.DecimalFormatSymbols
+import java.text.SimpleDateFormat
 import java.util.*
 
 class MessageCaptionFormatter(private val resources: Resources) {
+
 
     private val decimalFormat = DecimalFormat("#,###.##").apply {
         decimalFormatSymbols = DecimalFormatSymbols().apply {
             decimalSeparator = ' '
         }
     }
+
+    val sdf = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssXXX")
+
+    private val formatted = SimpleDateFormat("dd.MM.yyyy HH:mm")
 
     fun formatMessage(lang: String, feature: AdFeature): String {
 
@@ -32,9 +38,10 @@ class MessageCaptionFormatter(private val resources: Resources) {
             )
         }
 
+        val location = "${feature.district}, ${feature.city}"
+
         var message = """
-        🏙️ <b>${resources.getTranslation(lang, "city")}</b> - ${feature.city}
-        📍 <b>${resources.getTranslation(lang, "district")}</b> - ${feature.district}
+        📍 <b>${resources.getTranslation(lang, "location")}</b> - $location
         🛏 <b>${resources.getTranslation(lang, "room")}</b> - ${feature.room}
         📐 <b>${
             resources.getTranslation(
@@ -43,16 +50,23 @@ class MessageCaptionFormatter(private val resources: Resources) {
             )
         }</b> - ${feature.area} ${if (lang == "ru" || lang == "ua") "м²" else "m²"}
         $price
+       
     """.trimIndent()
 
         feature.deposit?.takeIf { it.isNotEmpty() }?.let { deposit ->
-            message += "\n🔐 <b>${resources.getTranslation(lang, "deposit")}</b> - $deposit zł"
+            message += "🔐 <b>${resources.getTranslation(lang, "deposit")}</b> - $deposit zł"
         }
-
+        val formatted = sdf.parse(feature.createdAt)?.run {
+            formatted.format(this)
+        }
+        message += """
+            
+            ------------------------------------
+            📆 $formatted
+        """.trimIndent()
         message += "\n\n<a href=\"${feature.url}\">${resources.getTranslation(lang, "go_to_ad")}</a>"
         return message
     }
-
 
     fun prepareConfirmationMessage(config: UserInfo): String {
 
@@ -60,7 +74,7 @@ class MessageCaptionFormatter(private val resources: Resources) {
         val lang = config.lang
         val city = resources.locations.firstOrNull { it.id == userCriteria.city }
 
-        val locations = city?.let { city ->
+        val locations = city?.let { _ ->
             city.locations
                 .filter { location -> userCriteria.district.contains(location.id) }
                 .map { location -> location.name }

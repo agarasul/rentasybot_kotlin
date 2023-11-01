@@ -41,6 +41,7 @@ class OtodomParser(
         "Cookie" to "lang=pl"
     )
 
+
     private val rooms = hashMapOf(
         0 to "MORE",
         1 to "ONE",
@@ -158,6 +159,9 @@ class OtodomParser(
                 response.close()
             }
         } catch (e: Exception) {
+
+            // 2023-10-22T10:48:27+02:00
+            // 2023-10-26T21:29:49+02:00
             e.printStackTrace()
         }
     }
@@ -226,7 +230,8 @@ class OtodomParser(
                 area = characteristics.firstOrNull {
                     it.get("key").asString == "m"
                 }?.get("value")?.asString,
-                url = url
+                url = url,
+                createdAt = ad["modifiedAt"].asString
             )
             messageQueue.addToStack(
                 adMessage = AdMessage(

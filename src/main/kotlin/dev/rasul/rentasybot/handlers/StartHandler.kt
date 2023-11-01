@@ -9,7 +9,6 @@ import dev.rasul.rentasybot.db.UserConfigDao
 import dev.rasul.rentasybot.models.UserCriteria
 import dev.rasul.rentasybot.models.UserInfo
 import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.async
 
 class StartHandler(
     override val dao: UserConfigDao,
@@ -24,28 +23,24 @@ class StartHandler(
 
                 val config = dao.getUser(chatId)
 
-                val message: String = scope.async {
-                    if (config == null) {
-                        val newConfig = UserInfo.new(
-                            telegramUserId = chatId,
-                            firstname = update.message?.from?.firstName,
-                            lastname = update.message?.from?.lastName
-                        )
-                        dao.insertUser(newConfig)
+                val message: String = if (config == null) {
+                    val newConfig = UserInfo.new(
+                        telegramUserId = chatId,
+                        firstname = update.message?.from?.firstName,
+                        lastname = update.message?.from?.lastName
+                    )
+                    dao.insertUser(newConfig)
 
-                        resources.getTranslation("en", "lets_start")
-                    } else {
-                        dao.updateUser(
-                            chatId,
-                            params = mapOf(
-                                UserInfo::seenOlxIds.name to listOf("4", "3"),
-                                UserCriteria::step.name to UserCriteria.Step.Language
-                            )
+                    resources.getTranslation("en", "lets_start")
+                } else {
+                    val user = dao.updateUser(
+                        chatId,
+                        params = mapOf(
+                            UserCriteria::step.name to UserCriteria.Step.Language
                         )
-
-                        resources.getTranslation("en", "start_search_message")
-                    }
-                }.await()
+                    )
+                    resources.getTranslation(user?.lang ?: "en", "start_search_message")
+                }
 
                 bot.sendMessage(
                     chatId = ChatId.fromId(chatId),

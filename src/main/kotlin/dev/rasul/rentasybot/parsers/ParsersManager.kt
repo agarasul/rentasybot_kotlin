@@ -15,7 +15,6 @@ class ParsersManager(
         scope.launch {
             while (true) {
                 userConfigDao.getUsers().collect { config ->
-                    println(config.toString())
                     parsers.forEach { parser ->
                         println("Parser Started = ${parser::class.java.name}")
                         launch {
