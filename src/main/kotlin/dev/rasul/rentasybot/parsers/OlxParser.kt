@@ -141,8 +141,6 @@ class OlxParser(
 
                 parseAndSendResults(
                     id = id,
-                    city = city,
-                    location = location,
                     config = config
                 )
 
@@ -153,8 +151,6 @@ class OlxParser(
 
     private fun parseAndSendResults(
         id: String,
-        city: Location,
-        location: Location?,
         config: UserInfo
     ) {
 
@@ -180,8 +176,8 @@ class OlxParser(
         val url = ad.get("url").asString
 
 
-        val cityName = city.name
-        val district = location?.name
+        val city = ad["location"].asJsonObject["city"].asJsonObject["name"].asString
+        val district = ad["location"].asJsonObject["district"].asJsonObject["name"].asString
 
 
         val params = gson.fromJson<List<OlxParam>>(ad["params"], object : TypeToken<List<OlxParam>>() {}.type)
@@ -228,7 +224,7 @@ class OlxParser(
 
         val adFeature = AdFeature(
             title = title,
-            city = cityName,
+            city = city,
             district = district,
             room = room,
             floor = floor,

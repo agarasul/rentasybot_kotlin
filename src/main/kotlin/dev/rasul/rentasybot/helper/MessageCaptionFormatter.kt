@@ -38,7 +38,12 @@ class MessageCaptionFormatter(private val resources: Resources) {
             )
         }
 
-        val location = "${feature.district}, ${feature.city}"
+
+        val location = if (feature.district != null) {
+            "${feature.district}, ${feature.city}"
+        } else {
+            "${feature.city}"
+        }
 
         var message = """
         📍 <b>${resources.getTranslation(lang, "location")}</b> - $location
