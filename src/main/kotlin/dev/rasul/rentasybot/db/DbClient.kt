@@ -5,16 +5,18 @@ import com.mongodb.MongoClientSettings
 import com.mongodb.ServerApi
 import com.mongodb.ServerApiVersion
 import com.mongodb.kotlin.client.coroutine.MongoClient
-import dev.rasul.rentasybot.config.BuildConfig
-import dev.rasul.rentasybot.models.UserConfig
+import dev.rasul.rentasybot.config.AppConfig
+import dev.rasul.rentasybot.models.UserInfo
 
-class DbClient {
+class DbClient(
+    private val config : AppConfig
+) {
     private val database by lazy {
-        client.getDatabase(BuildConfig.DB_NAME)
+        client.getDatabase(config.getDbName())
     }
 
     val usersCollection
-        get() = database.getCollection<UserConfig>(BuildConfig.getCollectionName())
+        get() = database.getCollection<UserInfo>(config.getCollectionName())
 
 
     private val client: MongoClient by lazy {

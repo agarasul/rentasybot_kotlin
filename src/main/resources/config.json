@@ -1,0 +1,15 @@
+{
+    "is_debug": true,
+    "developer_user_id": "@rasul98",
+    "telegram_bot_token": {
+        "prod": "6671913226:AAGyPP1LRnSo9xvVwdVqgdUP_LpPx31SgDY",
+        "dev": "6635768392:AAH0Pqco21Bct3BYHPS1ho15TaKdumHUOBU"
+    },
+    "db": {
+        "name": "rentasy_db",
+        "collection": {
+            "dev": "users_migration",
+            "prod": "users"
+        }
+    }
+}

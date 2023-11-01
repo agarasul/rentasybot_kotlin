@@ -4,13 +4,32 @@ import org.bson.codecs.pojo.annotations.BsonProperty
 
 data class UserCriteria(
     @BsonProperty("city") val city: Int? = null,
-    @BsonProperty("all_districts") val allDistricts: Boolean = true,
+    @BsonProperty("allDistricts") val allDistricts: Boolean = false,
     @BsonProperty("district") val district: List<Int> = emptyList(),
-    @BsonProperty("room_from") val roomFrom: Int? = null,
-    @BsonProperty("room_to") val roomTo: Int? = null,
-    @BsonProperty("price_from") val priceFrom: Int? = null,
-    @BsonProperty("price_to") val priceTo: Int? = null,
-    @BsonProperty("area_from") val areaFrom: Int? = null,
-    @BsonProperty("area_to") val areaTo: Int? = null,
-    @BsonProperty("only_from_owners") val onlyFromOwners: Boolean = false
-)
+    @BsonProperty("roomMin") val roomMin: Int? = null,
+    @BsonProperty("roomMax") val roomMax: Int? = null,
+    @BsonProperty("priceMin") val priceMin: Int? = null,
+    @BsonProperty("priceMax") val priceMax: Int? = null,
+    @BsonProperty("areaMin") val areaMin: Int? = null,
+    @BsonProperty("areaMax") val areaMax: Int? = null,
+    @BsonProperty("onlyFromOwners") val onlyFromOwners: Boolean = false,
+    @BsonProperty("finished") val finished: Boolean = false,
+    @BsonProperty("enabled") val enabled: Boolean = false,
+    @BsonProperty("step") val step: String = Step.Start.name
+
+){
+    enum class Step {
+        Start,
+        Language,
+        City,
+        District,
+        RoomMin,
+        RoomMax,
+        Price,
+        Area,
+        AdType,
+        Confirmation,
+        Finished
+    }
+
+}

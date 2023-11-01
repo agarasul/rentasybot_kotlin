@@ -5,10 +5,11 @@ data class OlxParam(
     val name: String,
     val type: String,
     val value: OlxParamValue
-)
+) {
+    data class OlxParamValue(
+        val key: String,
+        val label: String,
+        val value: String? = null
+    )
+}
 
-data class OlxParamValue(
-    val key: String,
-    val label: String,
-    val value: String? = null
-)

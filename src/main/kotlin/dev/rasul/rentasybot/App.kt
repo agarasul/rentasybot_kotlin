@@ -7,8 +7,6 @@ class App(
     private val rentasyBot: RentasyBot,
     private val parsersManager: ParsersManager
 ) {
-
-
     fun initApp() {
         rentasyBot.start()
         rentasyBot.sendAds()

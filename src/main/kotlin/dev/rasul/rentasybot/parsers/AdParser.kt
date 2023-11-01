@@ -1,9 +1,9 @@
 package dev.rasul.rentasybot.parsers
 
-import dev.rasul.rentasybot.models.UserConfig
+import dev.rasul.rentasybot.models.UserInfo
 
 interface AdParser {
 
 
-    suspend fun startParsing(config: UserConfig)
+    suspend fun startParsing(config: UserInfo)
 }

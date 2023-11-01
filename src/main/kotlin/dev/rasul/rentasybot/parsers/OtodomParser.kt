@@ -1,18 +1,21 @@
+
 import com.google.gson.Gson
 import com.google.gson.JsonObject
 import dev.rasul.rentasybot.Resources
 import dev.rasul.rentasybot.db.UserConfigDao
+import dev.rasul.rentasybot.helper.MessageCaptionFormatter
 import dev.rasul.rentasybot.models.AdFeature
 import dev.rasul.rentasybot.models.AdMessage
-import dev.rasul.rentasybot.models.UserConfig
+import dev.rasul.rentasybot.models.UserInfo
 import dev.rasul.rentasybot.parsers.AdParser
-import dev.rasul.rentasybot.parsers.MessageCaptionFormatter
 import dev.rasul.rentasybot.queue.AdsMessageQueue
 import okhttp3.HttpUrl.Companion.toHttpUrl
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import org.jsoup.Jsoup
 import java.io.File
+import java.util.logging.Level
+import java.util.logging.Logger
 
 
 class OtodomParser(
@@ -24,8 +27,11 @@ class OtodomParser(
     private val messageCaptionFormatter: MessageCaptionFormatter
 ) : AdParser {
 
-    private val OTODOM_BASE_URL = "https://www.otodom.pl/pl/wyniki/wynajem/mieszkanie/wiele-lokalizacji?"
+    companion object {
+        private val OTODOM_BASE_URL = "https://www.otodom.pl/pl/wyniki/wynajem/mieszkanie/wiele-lokalizacji?"
 
+        const val ADS_COUNT = 5
+    }
     private val headers = hashMapOf(
         "authority" to "www.otodom.pl",
         "Host" to "www.otodom.pl",
@@ -49,104 +55,107 @@ class OtodomParser(
         10 to "TEN"
     )
 
-    override suspend fun startParsing(config: UserConfig) {
+    override suspend fun startParsing(config: UserInfo) {
+        Logger.getLogger(OkHttpClient::class.java.name).setLevel(Level.FINE)
         try {
-            val userCriteria = config.criteria
+            config.criteria?.let { criteria ->
 
-            val city = resources.locations.firstOrNull { it.id == userCriteria.city }
+                val city = resources.locations.firstOrNull { it.id == criteria.city }
 
-            val filtered = rooms.filterKeys { it in userCriteria.roomFrom!!..userCriteria.roomTo!! }
+                val filtered = rooms.filterKeys { it in criteria.roomMin!!..criteria.roomMax!! }
 
-            val userDistricts = city?.locations
-                ?.filter { userCriteria.district.contains(it.id) }
-                ?.map { it.otodom.location }
+                val userDistricts = city?.locations
+                    ?.filter { criteria.district.contains(it.id) }
+                    ?.map { it.otodom.location }
 
-            val params = mapOf(
-                "distanceRadius" to "0",
-                "page" to "1",
-                "limit" to "36",
-                "areaMin" to userCriteria.areaFrom.toString(),
-                "areaMax" to userCriteria.areaTo.toString(),
-                "priceMin" to userCriteria.priceFrom.toString(),
-                "priceMax" to userCriteria.priceTo.toString(),
-                "roomsNumber" to "[${filtered.values.joinToString(",")}]",
-                "by" to "DEFAULT",
-                "direction" to "DESC",
-                "viewType" to "listing"
-            ).toMutableMap()
-
-
-            if (userCriteria.allDistricts.not()) {
-                params["locations"] = "[${userDistricts?.joinToString(",")}]"
-            }
-
-            params["isPrivateOwner"] = userCriteria.onlyFromOwners.toString()
+                val params = mapOf(
+                    "distanceRadius" to "0",
+                    "page" to "1",
+                    "limit" to "36",
+                    "areaMin" to criteria.areaMin.toString(),
+                    "areaMax" to criteria.areaMax.toString(),
+                    "priceMin" to criteria.priceMin.toString(),
+                    "priceMax" to criteria.priceMax.toString(),
+                    "roomsNumber" to "[${filtered.values.joinToString(",")}]",
+                    "by" to "DEFAULT",
+                    "direction" to "DESC",
+                    "viewType" to "listing"
+                ).toMutableMap()
 
 
-            val urlBuilder = OTODOM_BASE_URL.toHttpUrl()
-                .newBuilder()
-                .apply {
-                    params.forEach { (key, value) ->
-                        addQueryParameter(key, value)
-                    }
-                }.build()
-
-            val request = Request.Builder()
-                .url(urlBuilder)
-                .get()
-                .apply {
-
+                if (criteria.allDistricts.not()) {
+                    params["locations"] = "[${userDistricts?.joinToString(",")}]"
                 }
-                .build()
 
-            val response = okHttpClient.newCall(request).execute()
-
-            println(response.request.url)
-
-            val seenIds = config.seenOtodomIds.toMutableList()
+                params["isPrivateOwner"] = criteria.onlyFromOwners.toString()
 
 
-            val document = Jsoup.connect(request.url.toString()).get()
+                val urlBuilder = OTODOM_BASE_URL.toHttpUrl()
+                    .newBuilder()
+                    .apply {
+                        params.forEach { (key, value) ->
+                            addQueryParameter(key, value)
+                        }
+                    }.build()
+
+                val request = Request.Builder()
+                    .url(urlBuilder)
+                    .get()
+                    .build()
+
+                val response = okHttpClient.newCall(request).execute()
+
+                println(response.request.url)
+
+                val seenIds = config.seenOtodomIds.toMutableList()
 
 
-            val scriptData = document.select("script").firstOrNull {
-                it.attr("id") == "__NEXT_DATA__"
-            }?.let {
-                gson.fromJson(it.data(), JsonObject::class.java)
-            }
-
-            scriptData?.let {
-                val ads = scriptData["props"]
-                    .asJsonObject["pageProps"]
-                    .asJsonObject["data"]
-                    .asJsonObject["searchAds"]
-                    .asJsonObject["items"]
-                    .asJsonArray
+                val document = Jsoup.connect(request.url.toString()).get()
 
 
-                val adsCount = 1
-                ads.take(adsCount).forEach { ad ->
-                    val adId = ad.asJsonObject["id"].asString
-
-                    val slug = ad.asJsonObject["slug"].asString
-                    if (seenIds.contains(adId)) {
-                        return@forEach
-                    }
-
-                    seenIds.add(adId)
-
-                    val newUserConfig = config.copy(
-                        seenOtodomIds = seenIds
-                    )
-                    configDao.updateUserConfig(newUserConfig)
-
-                    val adUrl = "https://www.otodom.pl/pl/oferta/$slug"
-                    parseAndSendResults(
-                        chatId = config.telegramUserId,
-                        lang = config.lang,
-                        url = adUrl
-                    )
+                val scriptData = document.select("script").firstOrNull {
+                    it.attr("id") == "__NEXT_DATA__"
+                }?.let {
+                    gson.fromJson(it.data(), JsonObject::class.java)
                 }
+
+                scriptData?.let {
+                    val ads = scriptData["props"]
+                        .asJsonObject["pageProps"]
+                        .asJsonObject["data"]
+                        .asJsonObject["searchAds"]
+                        .asJsonObject["items"]
+                        .asJsonArray
+
+
+                    ads.take(ADS_COUNT).forEach { ad ->
+                        val adId = ad.asJsonObject["id"].asString
+
+                        val slug = ad.asJsonObject["slug"].asString
+                        if (seenIds.contains(adId)) {
+                            return@forEach
+                        }
+
+                        seenIds.add(adId)
+
+                        configDao.updateUser(
+                            config.telegramUserId,
+                            params = mapOf(
+                                UserInfo::seenOtodomIds.name to seenIds
+                            )
+                        )
+
+//                    configDao.updateUser(newUserConfig)
+
+                        val adUrl = "https://www.otodom.pl/pl/oferta/$slug"
+                        parseAndSendResults(
+                            chatId = config.telegramUserId,
+                            lang = config.lang,
+                            url = adUrl
+                        )
+                    }
+                }
+                response.close()
             }
         } catch (e: Exception) {
             e.printStackTrace()
@@ -162,7 +171,8 @@ class OtodomParser(
             .headers(headers)
             .get()
 
-        println(url)
+
+
 
         val scriptData = document.select("script").firstOrNull {
             it.attr("id") == "__NEXT_DATA__"
@@ -177,6 +187,10 @@ class OtodomParser(
 
             val title = ad.get("title").asString
 
+
+            val city = ad["location"].asJsonObject["address"].asJsonObject["city"].asJsonObject["name"].asString
+            val district = ad["location"].asJsonObject["address"].asJsonObject["district"].asJsonObject["name"].asString
+
             val attachments = mutableListOf<File>()
 
             val images = ad.getAsJsonArray("images")
@@ -189,7 +203,7 @@ class OtodomParser(
                 val imageResponse =
                     okHttpClient.newCall(Request.Builder().url(imageUrl.toHttpUrl()).build())
                         .execute()
-                 imageResponse.body?.bytes()?.let {
+                imageResponse.body?.bytes()?.let {
                     imageFile.writeBytes(it)
                     attachments.add(imageFile)
                 }
@@ -200,6 +214,8 @@ class OtodomParser(
 
             val adFeature = AdFeature(
                 title = title,
+                city = city,
+                district = district,
                 room = characteristics.firstOrNull { it.get("key").asString == "rooms_num" }?.get("value")?.asString,
                 floor = characteristics.firstOrNull { it.get("key").asString == "floor_no" }
                     ?.get("localizedValue")?.asString,

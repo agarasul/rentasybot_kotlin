@@ -3,9 +3,9 @@ import com.google.gson.JsonObject
 import com.google.gson.reflect.TypeToken
 import dev.rasul.rentasybot.Resources
 import dev.rasul.rentasybot.db.UserConfigDao
+import dev.rasul.rentasybot.helper.MessageCaptionFormatter
 import dev.rasul.rentasybot.models.*
 import dev.rasul.rentasybot.parsers.AdParser
-import dev.rasul.rentasybot.parsers.MessageCaptionFormatter
 import dev.rasul.rentasybot.queue.AdsMessageQueue
 import okhttp3.HttpUrl.Companion.toHttpUrl
 import okhttp3.OkHttpClient
@@ -20,6 +20,10 @@ class OlxParser(
     private val messageQueue: AdsMessageQueue,
     private val messageCaptionFormatter: MessageCaptionFormatter
 ) : AdParser {
+
+    companion object {
+        const val ADS_COUNT = 5
+    }
 
 
     private val rooms = mapOf(
@@ -43,30 +47,30 @@ class OlxParser(
     )
 
     @Throws(Exception::class)
-    override suspend fun startParsing(config: UserConfig) {
-        val criteria = config.criteria
+    override suspend fun startParsing(config: UserInfo) {
+        config.criteria?.let { criteria ->
 
-        val city = resources.locations.find { it.id == criteria.city }!!
+            val city = resources.locations.find { it.id == criteria.city }!!
 
 
-        val params = mutableMapOf(
-            "category_id" to 15,
-            "city_id" to city.olx.id,
-            "sort_by" to "created_at:desc",
-            "filter_float_price:to" to criteria.priceTo,
-            "filter_float_m:from" to criteria.areaFrom,
-            "filter_float_m:to" to criteria.areaTo,
-            "filter_enum_rooms[]" to (criteria.roomFrom!! until criteria.roomTo!!)
-                .filter { it <= 4 }
-                .mapNotNull { rooms[it] }
-        )
+            val params = mutableMapOf(
+                "category_id" to 15,
+                "city_id" to city.olx.id,
+                "sort_by" to "created_at:desc",
+                "filter_float_price:to" to criteria.priceMax,
+                "filter_float_m:from" to criteria.areaMin,
+                "filter_float_m:to" to criteria.areaMax,
+                "filter_enum_rooms[]" to (criteria.roomMin!! until criteria.roomMax!!)
+                    .filter { it <= 4 }
+                    .mapNotNull { rooms[it] }
+            )
 
-        if (criteria.onlyFromOwners) {
-            params["owner_type"] = "private"
-        }
+            if (criteria.onlyFromOwners) {
+                params["owner_type"] = "private"
+            }
 
-        val location = if (criteria.allDistricts.not()) {
-            city.locations.firstOrNull()
+            val location = if (criteria.allDistricts.not()) {
+                city.locations.firstOrNull()
 //            val locations = city?.locations?.map {
 //                criteria.district.contains(it.id)
 //            }
@@ -78,64 +82,65 @@ class OlxParser(
 //                params["district_id"] = location["olx"]?.get("id") as? Int
 //                coros.addAll(getItemsTasks(params, location, location, userConfig))
 //            }
-        } else {
-            null
-        }
+            } else {
+                null
+            }
 
-        val url = "https://www.olx.pl/api/v1/offers".toHttpUrl()
-            .newBuilder()
-            .apply {
-                params.forEach { (key, value) ->
-                    if (value is List<*>) {
-                        value.forEach {
-                            addQueryParameter(key, it.toString())
+            val url = "https://www.olx.pl/api/v1/offers".toHttpUrl()
+                .newBuilder()
+                .apply {
+                    params.forEach { (key, value) ->
+                        if (value is List<*>) {
+                            value.forEach {
+                                addQueryParameter(key, it.toString())
+                            }
+                        } else {
+                            addQueryParameter(key, value.toString())
                         }
-                    } else {
-                        addQueryParameter(key, value.toString())
                     }
+                }.build()
+
+
+            val request = Request.Builder()
+                .url(url)
+                .get()
+
+            val response = okHttpClient.newCall(request.build()).execute().use {
+                gson.fromJson(it.body?.string(), JsonObject::class.java)
+            }
+
+
+            val ads = response["data"].asJsonArray
+
+            val seenIds = config.seenOtodomIds.toMutableList()
+
+
+            ads.take(ADS_COUNT).forEach {
+                val ad = it.asJsonObject
+                if (ad == null || ad.has("partner")) {
+                    println("Returned")
+                    return@forEach
                 }
-            }.build()
 
+                val id = ad["id"].asString
 
-        val request = Request.Builder()
-            .url(url)
-            .get()
+                seenIds.add(id)
 
-        val response = okHttpClient.newCall(request.build()).execute().use {
-            gson.fromJson(it.body?.string(), JsonObject::class.java)
-        }
-
-
-        val ads = response["data"].asJsonArray
-
-        val seenIds = config.seenOtodomIds.toMutableList()
-        val adsCount = 1
-
-
-        ads.take(adsCount).forEach {
-            val ad = it.asJsonObject
-//            if (ad == null || ad.has("partner")) {
-//                println("Returned")
-//                return@forEach
-//            }
-
-            val id = ad["id"].asString
-
-            seenIds.add(id)
-
-            configDao.updateUserConfig(
-                config.copy(
-                    seenOlxIds = seenIds
+                configDao.updateUser(
+                    config.telegramUserId,
+                    params = mapOf(
+                        UserInfo::seenOlxIds.name to seenIds
+                    )
                 )
-            )
 
-            parseAndSendResults(
-                id = id,
-                city = city,
-                location = location,
-                config = config
-            )
+                parseAndSendResults(
+                    id = id,
+                    city = city,
+                    location = location,
+                    config = config
+                )
 
+            }
         }
     }
 
@@ -144,7 +149,7 @@ class OlxParser(
         id: String,
         city: Location,
         location: Location?,
-        config: UserConfig
+        config: UserInfo
     ) {
 
         val request = Request.Builder()

@@ -18,6 +18,9 @@ dependencies {
     implementation("com.squareup.okhttp3:okhttp:4.11.0")
     implementation 'org.jsoup:jsoup:1.16.2'
     implementation 'io.insert-koin:koin-core:3.5.0'
+    implementation 'org.apache.commons:commons-configuration2:2.9.0'
+// https://mvnrepository.com/artifact/commons-beanutils/commons-beanutils
+    implementation 'commons-beanutils:commons-beanutils:1.9.4'
 
     implementation 'org.mongodb:mongodb-driver-kotlin-coroutine:4.11.0'
     implementation 'com.google.code.gson:gson:2.10.1'
